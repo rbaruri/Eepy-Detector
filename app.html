@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BroRizz-Eepy Detector</title>
+
+    <meta name="viewport" content="width=640, user-scalable=no" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/inferencejs"></script>
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .side-menu {
+            width: 200px;
+            background-color: #171616;
+            padding: 20px 0;
+            position: fixed;
+            height: 100%;
+        }
+        .side-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .side-menu ul li {
+            margin: 20px 0;
+        }
+        .side-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+        }
+        .side-menu ul li a:hover {
+            background-color: #83261f;;
+        }
+        .container {
+            margin-left: 220px;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="side-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="app.html">App</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+<div class="loading">
+    <video id="video" autoplay muted playsinline></video>
+    <div id="fps"></div>
+</body>
+<footer style="position: fixed; bottom: 0; width: 100%; color: #f7f4f4; text-align: center; padding: 10px 0;">
+    Made with 💖 by BroRizz
+</footer>
+</html>
